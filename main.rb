@@ -38,7 +38,7 @@ onair_state = 0 #0 not onair  1 now onair
 loop do
     sleep 60
     onair = get_nowonair
-    if onair != nil
+    if onair == nil
 	next
     end
     present = onair['nowonair_list']['e1']['present']['title']
